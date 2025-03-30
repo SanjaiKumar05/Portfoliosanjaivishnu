@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>Contact Form</title>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "6EIb3sEdoPZChyLa4",
+           });
+        })();
+      </script>
+</head>
+
+<body>
+
+<section class="contact" id="contact">
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img draggable="false" src="D:\sanjai portfolio\Portfolioproject-main\image\Picsart_25-03-24_21-58-19-123.jpg" alt="">
+            </div>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" id="number" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" id="message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+                <div class="button-area">
+                    <button type="submit" onclick="sendMail(event)">Send The Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
